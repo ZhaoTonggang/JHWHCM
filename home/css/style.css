@@ -571,7 +571,7 @@ p {
 
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
 #home {
-	background: url('https://cartoon.heheda.top/url.php');
+	background: url('../images/bg/bg1.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -892,7 +892,7 @@ ul.portfolio-image li .desc {
 
 /*---------- d. testimonial -----------*/
 #testimonial {
-	background-image: url(https://cartoon.heheda.top/url.php);
+	background-image: url(../images/bg/bg2.png);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
