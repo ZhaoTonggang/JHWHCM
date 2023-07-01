@@ -89,7 +89,7 @@
 
 		//typed js
 		$(".typed").typed({
-			strings: ["传递欢乐！", "传递正义！", "传递爱与责任！"],
+			strings: ["唱片版权代理", "Record copyright agent", "唱片国际发行", "The record was released internationally"],
 			typeSpeed: 100,
 			backDelay: 900,
 			// loop
