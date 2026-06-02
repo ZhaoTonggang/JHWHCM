@@ -1,911 +1,740 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 	<head>
-		<meta charset="utf-8">
-		<title>江湖文化传媒</title>
-		<meta content="IE=edge" http-equiv="X-UA-Compatible">
-		<meta content="width=device-width, initial-scale=1" name="viewport">
-		<meta content="江湖文化传媒 - 这是最好的时代！" name="description">
-		<meta content="赵彤刚" name="author">
-		<!-- 谷歌广告 -->
-		<meta name="google-adsense-account" content="ca-pub-3670070169085381">
-		<!--Fav站标-->
-		<link href="home/images/favicon.ico" rel="shortcut icon">
-		<!--styles样式-->
-		<link href="home/css/bootstrap.min.css" rel="stylesheet">
-		<link href="home/css/owl.carousel.css" rel="stylesheet">
-		<link href="home/css/owl.theme.css" rel="stylesheet">
-		<link href="home/css/magnific-popup.css" rel="stylesheet">
-		<link href="home/css/style.css" rel="stylesheet">
-		<link href="home/css/responsive.css" rel="stylesheet">
-		<!--google字体-->
-		<!--<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>-->
-
-		<!-- [if lt IE 9]-->
-		<script type="text/javascript" src="home/js/html5shiv.min.js"></script>
-		<!--[endif] -->
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>江湖文化传媒工作室 - 软件开发与传媒设计专家</title>
+		<link rel="stylesheet" href="./style.css">
 	</head>
-
 	<body>
-		<!--PRELOADER-->
-		<div id="preloader">
-			<div id="status">
-				<img alt="logo" src="home/images/logo.png">
-			</div>
+		<div class="chinese-decoration">
+			<div class="cloud-pattern cloud-1"></div>
+			<div class="cloud-pattern cloud-2"></div>
+			<div class="cloud-pattern cloud-3"></div>
+			<div class="corner-decoration corner-tl"></div>
+			<div class="corner-decoration corner-tr"></div>
+			<div class="corner-decoration corner-bl"></div>
+			<div class="corner-decoration corner-br"></div>
 		</div>
-		<!--/.PRELOADER END-->
 
-		<!--HEADER -->
-		<div class="header">
-			<div class="for-sticky">
-				<!--LOGO-->
-				<div class="col-md-2 col-xs-6 logo">
-					<a href="index.html"><img alt="logo" class="logo-nav" src="home/images/logo.png"></a>
+		<canvas id="particles-canvas"></canvas>
+
+		<nav>
+			<div class="nav-container">
+				<div class="logo">江湖文化传媒</div>
+				<ul class="nav-links" id="navLinks">
+					<li><a href="#home">首页</a></li>
+					<li><a href="#services">业务范围</a></li>
+					<li><a href="#portfolio">成功案例</a></li>
+					<!-- <li><a href="#team">团队介绍</a></li> -->
+					<li><a href="#contact">联系我们</a></li>
+				</ul>
+				<button class="mobile-menu-btn" id="menuBtn">
+					<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M3 12h18M3 6h18M3 18h18" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+			</div>
+		</nav>
+
+		<section class="hero" id="home">
+			<div class="hero-content">
+				<div class="hero-decoration">
+					<div class="hero-line"></div>
+					<div class="hero-dot"></div>
+					<div class="hero-line"></div>
 				</div>
-				<!--/.LOGO END-->
+				<div class="text-rotator">
+					<div class="text-item active">
+						<h1>网页正在完善中...</h1>
+						<p>本站点正在进一步开发中，相关功能正在逐步完善</p>
+					</div>
+					<div class="text-item">
+						<h1>「大道至简 - 优雅易用」</h1>
+						<p>致力于向中国数字化团队交付被广泛验证、可信赖的通用软件程式</p>
+					</div>
+					<div class="text-item">
+						<h1>「创意无限 - 技术驱动」</h1>
+						<p>用前沿技术和创新设计，为您的业务赋能增效</p>
+					</div>
+					<div class="text-item">
+						<h1>「专业服务 - 品质保证」</h1>
+						<p>从策划到交付，全程专业服务，确保项目完美落地</p>
+					</div>
+					<div class="text-item">
+						<h1>「携手共进 - 共创未来」</h1>
+						<p>与您一起探索数字化转型的无限可能</p>
+					</div>
+				</div>
+				<div class="cta-buttons">
+					<a href="#contact" class="btn btn-primary">开启合作</a>
+					<a href="#portfolio" class="btn btn-secondary">查看案例</a>
+				</div>
 			</div>
-			<div class="menu-wrap">
-				<nav class="menu">
-					<div class="menu-list">
-						<a data-scroll="" href="#home" class="active">
-							<span>第一映像</span>
-						</a>
-						<a data-scroll="" href="#about">
-							<span>企业简介</span>
-						</a>
-						<a data-scroll="" href="#work">
-							<span>节目案例</span>
-						</a>
-						<a data-scroll="" href="#services">
-							<span>主要业务</span>
-						</a>
-						<a data-scroll="" href="#skill">
-							<span>产业透视</span>
-						</a>
-						<a data-scroll="" href="#education">
-							<span>闪光时刻</span>
-						</a>
-						<a data-scroll="" href="#testimonial">
-							<span>成长历程</span>
-						</a>
-						<a data-scroll="" href="#blog">
-							<span>合作平台</span>
-						</a>
-						<a data-scroll="" href="#contact">
-							<span>留言建议</span>
-						</a>
-						<a data-scroll="" href="#lxwm">
-							<span>联系我们</span>
-						</a>
+		</section>
+
+		<section class="section" id="services">
+			<div class="section-header">
+				<div class="section-decoration">
+					<div class="section-line"></div>
+					<div class="section-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<circle cx="12" cy="12" r="10"></circle>
+							<path d="M12 6v6l4 2"></path>
+						</svg>
 					</div>
-				</nav>
-				<button class="close-button" id="close-button">Close Menu</button>
+					<div class="section-line"></div>
+				</div>
+				<h2 class="section-title">我们的服务</h2>
+				<p class="section-subtitle">从软件开发到数字音频，全方位数字化解决方案</p>
 			</div>
-			<button class="menu-button" id="open-button">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-			<!--/.for-sticky-->
-		</div>
-		<!--/.HEADER END-->
+			<div class="services-grid">
+				<div class="service-card fade-in">
+					<div class="service-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<polyline points="16 18 22 12 16 6"></polyline>
+							<polyline points="8 6 2 12 8 18"></polyline>
+						</svg>
+					</div>
+					<h3>软件开发</h3>
+					<p>专业的软件开发团队，为您打造高性能、可扩展的数字化解决方案</p>
+					<ul class="service-list">
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							企业级Web应用开发
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							移动应用开发
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							小程序开发
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							系统架构设计
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							技术咨询服务
+						</li>
+					</ul>
+				</div>
+				<div class="service-card fade-in">
+					<div class="service-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+							<path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+							<path d="M2 2l7.586 7.586"></path>
+							<circle cx="11" cy="11" r="2"></circle>
+						</svg>
+					</div>
+					<h3>传媒设计</h3>
+					<p>创意设计团队，让您的品牌在数字世界中绽放独特魅力</p>
+					<ul class="service-list">
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							品牌视觉设计
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							UI/UX界面设计
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							视频制作与剪辑
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							平面广告设计
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							新媒体运营
+						</li>
+					</ul>
+				</div>
+				<div class="service-card fade-in">
+					<div class="service-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+						</svg>
+					</div>
+					<h3>数字营销</h3>
+					<p>全方位数字营销方案，助力企业在竞争中脱颖而出</p>
+					<ul class="service-list">
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							社交媒体推广
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							搜索引擎优化
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							内容策划运营
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							数据分析报告
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							营销活动策划
+						</li>
+					</ul>
+				</div>
+				<div class="service-card fade-in">
+					<div class="service-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+							<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+							<line x1="6" y1="6" x2="6.01" y2="6"></line>
+							<line x1="6" y1="18" x2="6.01" y2="18"></line>
+						</svg>
+					</div>
+					<h3>服务器远程运维</h3>
+					<p>专业的IT运维团队，为您的业务稳定运行保驾护航</p>
+					<ul class="service-list">
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							服务器监控与管理
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							故障排查与修复
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							系统安全加固
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							数据备份与恢复
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							性能优化与扩容
+						</li>
+					</ul>
+				</div>
+				<div class="service-card fade-in">
+					<div class="service-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M9 18V5l12-2v13"></path>
+							<circle cx="6" cy="18" r="3"></circle>
+							<circle cx="18" cy="16" r="3"></circle>
+						</svg>
+					</div>
+					<h3>数字音频出版</h3>
+					<p>专业音频制作团队，为您打造高质量的数字音频内容</p>
+					<ul class="service-list">
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							有声读物录制
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							播客节目制作
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							音频后期处理
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							音乐制作与编曲
+						</li>
+						<li>
+							<svg class="icon-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="3">
+								<polyline points="20 6 9 17 4 12"></polyline>
+							</svg>
+							音频版权发行
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-		<!--CONTENT WRAP-->
-		<div class="content-wrap">
-			<!--CONTENT-->
-			<div class="content">
-				<!--HOME-->
-				<section id="home">
-					<div class="container">
-						<div class="row">
-							<div class="wrap-hero-content">
-								<div class="hero-content">
-									<h1>江湖文化传媒</h1>
-									<br>
-									<span class="typed"></span>
-								</div>
-							</div>
-							<div class="mouse-icon margin-20">
-								<div class="scroll"></div>
-							</div>
+		<section class="stats-section">
+			<div class="stats-grid">
+				<div class="stat-item fade-in">
+					<h3 class="counter" data-target="50">0</h3>
+					<p>成功项目</p>
+				</div>
+				<div class="stat-item fade-in">
+					<h3 class="counter" data-target="50">0</h3>
+					<p>合作客户</p>
+				</div>
+				<div class="stat-item fade-in">
+					<h3 class="counter" data-target="8">0</h3>
+					<p>年经验</p>
+				</div>
+				<div class="stat-item fade-in">
+					<h3 class="counter" data-target="98">0</h3>
+					<p>满意度%</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="portfolio">
+			<div class="section-header">
+				<div class="section-decoration">
+					<div class="section-line"></div>
+					<div class="section-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<polygon
+								points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+							</polygon>
+						</svg>
+					</div>
+					<div class="section-line"></div>
+				</div>
+				<h2 class="section-title">成功案例</h2>
+				<p class="section-subtitle">每一个项目都是我们用心打造的精品</p>
+			</div>
+			<div class="portfolio-grid">
+				<div class="portfolio-card fade-in">
+					<div class="portfolio-image">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+							<line x1="3" y1="6" x2="21" y2="6"></line>
+							<path d="M16 10a4 4 0 0 1-8 0"></path>
+						</svg>
+					</div>
+					<div class="portfolio-content">
+						<div class="category">软件开发</div>
+						<h3>电商平台系统</h3>
+						<p>为某知名品牌打造的全渠道电商解决方案，支持多端同步访问</p>
+					</div>
+				</div>
+				<div class="portfolio-card fade-in">
+					<div class="portfolio-image" style="background: linear-gradient(135deg, #8b5cf6, #c41e3a);">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<polygon points="23 7 16 12 23 17 23 7"></polygon>
+							<rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+						</svg>
+					</div>
+					<div class="portfolio-content">
+						<div class="category">传媒设计</div>
+						<h3>品牌宣传片制作</h3>
+						<p>为企业打造专业品牌形象视频，提升品牌认知度和美誉度</p>
+					</div>
+				</div>
+				<div class="portfolio-card fade-in">
+					<div class="portfolio-image" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+							<line x1="12" y1="18" x2="12.01" y2="18"></line>
+						</svg>
+					</div>
+					<div class="portfolio-content">
+						<div class="category">软件开发</div>
+						<h3>智能健康APP</h3>
+						<p>融合AI技术的健康管理应用，帮助用户科学管理健康生活</p>
+					</div>
+				</div>
+				<div class="portfolio-card fade-in">
+					<div class="portfolio-image" style="background: linear-gradient(135deg, #ec4899, #d4af37);">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+							<path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+							<path d="M2 2l7.586 7.586"></path>
+							<circle cx="11" cy="11" r="2"></circle>
+						</svg>
+					</div>
+					<div class="portfolio-content">
+						<div class="category">传媒设计</div>
+						<h3>品牌视觉设计</h3>
+						<p>从Logo到全套视觉识别系统，打造完整的品牌视觉形象</p>
+					</div>
+				</div>
+				<div class="portfolio-card fade-in">
+					<div class="portfolio-image" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<path d="M3 21h18"></path>
+							<path d="M5 21V7l8-4v18"></path>
+							<path d="M19 21V11l-6-4"></path>
+						</svg>
+					</div>
+					<div class="portfolio-content">
+						<div class="category">软件开发</div>
+						<h3>企业管理系统</h3>
+						<p>定制化企业管理系统，提升办公效率，优化业务流程</p>
+					</div>
+				</div>
+				<div class="portfolio-card fade-in">
+					<div class="portfolio-image" style="background: linear-gradient(135deg, #d4af37, #c41e3a);">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+							</path>
+							<circle cx="12" cy="13" r="4"></circle>
+						</svg>
+					</div>
+					<div class="portfolio-content">
+						<div class="category">传媒设计</div>
+						<h3>产品视觉设计</h3>
+						<p>从品牌视觉到产品UI，全方位打造完美的用户体验</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="section" id="team">
+        <div class="section-header">
+            <div class="section-decoration">
+                <div class="section-line"></div>
+                <div class="section-icon">
+					<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+						<circle cx="9" cy="7" r="4"></circle>
+						<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+						<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+					</svg>
+				</div>
+                <div class="section-line"></div>
+            </div>
+            <h2 class="section-title">核心团队</h2>
+            <p class="section-subtitle">汇聚业界精英，共创辉煌未来</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-card fade-in">
+                <div class="team-avatar">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+						<circle cx="12" cy="7" r="4"></circle>
+					</svg>
+                </div>
+                <h3>张无忌</h3>
+                <p class="role">创始人 / CEO</p>
+                <p>十年互联网行业经验，曾任职于多家知名科技公司</p>
+                <div class="team-social">
+                    <a href="#"><span>in</span></a>
+                    <a href="#"><span>git</span></a>
+                    <a href="#"><span>微</span></a>
+                </div>
+            </div>
+            <div class="team-card fade-in">
+                <div class="team-avatar">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+						<circle cx="12" cy="7" r="4"></circle>
+					</svg>
+                </div>
+                <h3>赵敏</h3>
+                <p class="role">设计总监</p>
+                <p>资深视觉设计师，八年品牌设计经验，美学造诣深厚</p>
+                <div class="team-social">
+                    <a href="#"><span>in</span></a>
+                    <a href="#"><span>dr</span></a>
+                    <a href="#"><span>be</span></a>
+                </div>
+            </div>
+            <div class="team-card fade-in">
+                <div class="team-avatar">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+						<circle cx="12" cy="7" r="4"></circle>
+					</svg>
+                </div>
+                <h3>杨逍</h3>
+                <p class="role">技术总监</p>
+                <p>全栈开发专家，精通多种技术栈，架构能力出众</p>
+                <div class="team-social">
+                    <a href="#"><span>in</span></a>
+                    <a href="#"><span>git</span></a>
+                    <a href="#"><span>so</span></a>
+                </div>
+            </div>
+            <div class="team-card fade-in">
+                <div class="team-avatar">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+						<circle cx="12" cy="7" r="4"></circle>
+					</svg>
+                </div>
+                <h3>周芷若</h3>
+                <p class="role">运营总监</p>
+                <p>新媒体运营专家，擅长品牌推广与数字营销</p>
+                <div class="team-social">
+                    <a href="#"><span>in</span></a>
+                    <a href="#"><span>wb</span></a>
+                    <a href="#"><span>微</span></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+		<section class="section" id="contact">
+			<div class="section-header">
+				<div class="section-decoration">
+					<div class="section-line"></div>
+					<div class="section-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+							</path>
+							<polyline points="22,6 12,13 2,6"></polyline>
+						</svg>
+					</div>
+					<div class="section-line"></div>
+				</div>
+				<h2 class="section-title">联系我们</h2>
+				<p class="section-subtitle">期待与您的合作，让我们一起创造精彩</p>
+			</div>
+			<div class="contact-container">
+				<div class="contact-info">
+					<!-- <div class="contact-item fade-in">
+                    <div class="contact-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+							<circle cx="12" cy="10" r="3"></circle>
+						</svg>
+                    </div>
+                    <div>
+                        <h3>公司地址</h3>
+                        <p>北京市朝阳区科技园区A座2001室</p>
+                    </div>
+                </div> -->
+					<div class="contact-item fade-in">
+						<div class="contact-icon">
+							<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="2">
+								<path
+									d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+								</path>
+							</svg>
+						</div>
+						<div>
+							<h3>咨询电话</h3>
+							<h4>( 可加微信 )</h4>
+							<p>16699352957</p>
 						</div>
 					</div>
-				</section>
-				<!--/.HOME END-->
-
-				<!--ABOUT-->
-				<section id="about">
-					<div class="col-md-6 col-xs-12 no-pad">
-						<div class="bg-about"></div>
-					</div>
-					<div class="col-md-6 col-sm-12 col-xs-12 white-col">
-						<div class="row">
-							<!--OWL CAROUSEL2-->
-							<div class="owl-carousel2">
-								<div class="col-md-12">
-									<div class="wrap-about">
-										<div class="w-content">
-											<p class="head-about">
-												从一条熟悉又陌生的路，一路走来，
-												难以割舍的情怀，改变了很多，
-												也坚持了很多，发生了很多意想不到的事情，
-												但生活还是要继续。
-											</p>
-
-											<h5 class="name">
-												CEO：赵彤刚
-											</h5>
-											<img alt="signature" src="home/images/signature.png">
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-12 col-sm-12 col-xs-12 white-col">
-									<div class="row">
-										<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
-											<div class="wrap-about">
-												<table class="w-content">
-													<tr>
-														<td class="title">姓名 </td>
-														<td class="break">:</td>
-														<td> 赵彤刚</td>
-													</tr>
-													<tr>
-														<td class="title">手机 </td>
-														<td class="break">:</td>
-														<td> +86 18097896419</td>
-													</tr>
-													<tr>
-														<td class="title">邮箱 </td>
-														<td class="break">:</td>
-														<td> ztg@email.heheda.top</td>
-													</tr>
-													<tr>
-														<td class="title">地址 </td>
-														<td class="break">:</td>
-														<td> 中国新疆伊犁州</td>
-													</tr>
-													<tr>
-														<td class="title">QQ </td>
-														<td class="break">:</td>
-														<td> 2585649532</td>
-													</tr>
-													<tr>
-														<td class="title">微信 </td>
-														<td class="break">:</td>
-														<td> ZTG18097896419</td>
-													</tr>
-													<tr>
-														<td class="title">职位</td>
-														<td class="break">:</td>
-														<td> CEO</td>
-													</tr>
-												</table>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--/.OWL CAROUSEL2 END-->
+					<div class="contact-item fade-in">
+						<div class="contact-icon">
+							<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="2">
+								<path
+									d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+								</path>
+							</svg>
+						</div>
+						<div>
+							<h3>商务电话</h3>
+							<p>16699322957</p>
 						</div>
 					</div>
-				</section>
-				<!--/.ABOUT END-->
-
-				<!--WORK-->
-				<section class="grey-bg mar-tm-10" id="work">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="title-small">
-									<span>节目案例</span>
-								</h3>
-								<p class="content-detail">
-									曾参与策划北京卫视音乐大师课，并长期与国内外多家知名厂牌合作，持有环球唱片的区域业务代理。
-									<br /><br />
-									He has participated in the planning of Beijing Satellite TV's music master class,
-									and has cooperated with many well-known labels at home and abroad for a long time,
-									and holds the regional business agent of Universal Records.
-								</p>
-							</div>
-							<div class="col-md-9 content-right">
-								<!--PORTFOLIO IMAGE-->
-								<ul class="portfolio-image">
-									<li class="col-md-6">
-										<a href="https://y.qq.com/music/photo_new/T002R300x300M000001QpXGP0vOYwk_1.jpg"><img
-												alt="image"
-												src="https://y.qq.com/music/photo_new/T002R300x300M000001QpXGP0vOYwk_1.jpg"
-												loading="lazy">
-											<div class="decription-wrap">
-												<div class="image-bg">
-													<p class="desc">
-														音乐大师课第一期
-													</p>
-												</div>
-
-											</div>
-										</a>
-									</li>
-									<li class="col-md-6">
-										<a href="https://y.qq.com/music/photo_new/T002R300x300M000002cWiAF0cqeLe_1.jpg"><img
-												alt="image"
-												src="https://y.qq.com/music/photo_new/T002R300x300M000002cWiAF0cqeLe_1.jpg"
-												loading="lazy">
-											<div class="decription-wrap">
-												<div class="image-bg">
-													<p class="desc">
-														音乐大师课第二期
-													</p>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="col-md-6">
-										<a href="https://y.qq.com/music/photo_new/T002R300x300M000004CeLA50CUO6R_1.jpg"><img
-												alt="image"
-												src="https://y.qq.com/music/photo_new/T002R300x300M000004CeLA50CUO6R_1.jpg"
-												loading="lazy">
-											<div class="decription-wrap">
-												<div class="image-bg">
-													<p class="desc">
-														音乐大师课第三期
-													</p>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="col-md-6">
-										<a href="https://y.qq.com/music/photo_new/T002R300x300M0000039373h2i7gsN_1.jpg"><img
-												alt="image"
-												src="https://y.qq.com/music/photo_new/T002R300x300M0000039373h2i7gsN_1.jpg"
-												loading="lazy">
-											<div class="decription-wrap">
-												<div class="image-bg">
-													<p class="desc">
-														小石头和孩子们集合了很多颜值超高、唱功了得的孩子们，由石栋颖老师组建而成，他们演唱的歌曲都受到众多观众的极度好评！
-													</p>
-												</div>
-											</div>
-										</a>
-									</li>
-								</ul>
-								<!--/.PORTFOLIO IMAGE END-->
-							</div>
+					<div class="contact-item fade-in">
+						<div class="contact-icon">
+							<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="2">
+								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+								</path>
+								<polyline points="22,6 12,13 2,6"></polyline>
+							</svg>
+						</div>
+						<div>
+							<h3>电子邮箱</h3>
+							<p>web@email.heheda.top</p>
 						</div>
 					</div>
-				</section>
-				<!--/.WORK END-->
+					<!-- <div class="contact-item fade-in">
+                    <div class="contact-icon">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<circle cx="12" cy="12" r="10"></circle>
+							<polyline points="12 6 12 12 16 14"></polyline>
+						</svg>
+                    </div>
+                    <div>
+                        <h3>工作时间</h3>
+                        <p>周一至周五 9:00 - 18:00</p>
+                    </div>
+                </div> -->
+				</div>
+				<!-- <div class="contact-form fade-in">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>您的姓名</label>
+                        <input type="text" placeholder="请输入姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <label>联系邮箱</label>
+                        <input type="email" placeholder="请输入邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <label>联系电话</label>
+                        <input type="tel" placeholder="请输入电话">
+                    </div>
+                    <div class="form-group">
+                        <label>项目需求</label>
+                        <textarea placeholder="请描述您的项目需求..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">提交咨询</button>
+                </form>
+            </div> -->
+			</div>
+		</section>
 
-				<!--SERVICES-->
-				<section class="white-bg" id="services">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="title-small">
-									<span>主要业务</span>
-								</h3>
-								<p class="content-detail">
-									全球音乐免费发行为您提供全球免费发行，国内外20+数字音乐平台，240个国家地区正版上线销售，如：腾讯音乐、网易云音乐、阿里音乐、Apple Music...等
-									<br /><br />
-									Global Music Free Distribution provides you with global free distribution, 20+
-									digital music platforms at home and abroad, and genuine online sales in 240
-									countries and regions, such as: Tencent Music, NetEase Cloud Music, Ali Music, Apple
-									Music... wait
-								</p>
-							</div>
-							<div class="col-md-9 content-right">
-								<div class="row">
-									<ul class="listing-item">
-										<li>
-											<div class="col-md-4 col-sm-4">
-												<h3 class="icon-use">
-													c
-												</h3>
-												<p class="head-sm">
-													多维度数字统计监控
-												</p>
-												<p class="text-grey">
-													音乐平台数据自主监控统计，可视化的监控歌手每日作品播放量、评论量、粉丝数据的增幅情况、以及音乐上榜单监控并推送通知。
-												</p>
-											</div>
-										</li>
-
-										<li>
-											<div class="col-md-4 col-sm-4">
-												<h3 class="icon-use">
-													b
-												</h3>
-												<p class="head-sm">
-													音乐的版税收益
-												</p>
-												<p class="text-grey">
-													多渠道音乐销售变现，音乐平台的免费用户的歌曲试听、下载，以及付费用户的试听、下载，多维度获取收益，帮助音乐人实现价值最大化。
-												</p>
-											</div>
-										</li>
-
-										<li>
-											<div class="col-md-4 col-sm-4">
-												<h3 class="icon-use">
-													d
-												</h3>
-												<p class="head-sm">
-													免费拥有国际ISRC编码
-												</p>
-												<p class="text-grey">
-													歌手在平台所授权的原创音乐作品将免费拥有国际标准音像制品「ISRC」编码，用于港澳台、海外地区的音乐/专辑出版销售。
-												</p>
-											</div>
-										</li>
-									</ul>
-
-									<ul class="listing-item">
-										<li>
-											<div class="col-md-4 col-sm-4">
-												<p class="icon-use">
-													f
-												</p>
-												<p class="head-sm">
-													Multi-dimensional digital statistical monitoring
-												</p>
-												<p class="text-grey">
-													Music platform data independent monitoring statistics, visual
-													monitoring of singers' daily works playback, comments, fan data
-													increase, as well as music list monitoring and push notifications.
-												</p>
-											</div>
-										</li>
-
-										<li>
-											<div class="col-md-4 col-sm-4">
-												<h3 class="icon-use">
-													p
-												</h3>
-												<p class="head-sm">
-													Royalty earnings from music
-												</p>
-												<p class="text-grey">
-													Multi-channel music sales monetization, free users of music
-													platforms, song audition, download, as well as paid users' audition,
-													download, multi-dimensional revenue, to help musicians maximize
-													value.
-												</p>
-											</div>
-										</li>
-
-										<li>
-											<div class="col-md-4 col-sm-4">
-												<h3 class="icon-use">
-													m
-												</h3>
-												<p class="head-sm">
-													Free to have an international ISRC code
-												</p>
-												<p class="text-grey">
-													The original music works authorized by the singer on the platform
-													will have the international standard audio and video product "ISRC"
-													code free of charge, which will be used for the publication and sale
-													of music/albums in Hong Kong, Macao, Taiwan and overseas regions.
-												</p>
-											</div>
-										</li>
-									</ul>
-
-								</div>
-							</div>
-						</div>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-grid">
+					<div class="footer-col">
+						<div class="footer-logo">江湖文化传媒</div>
+						<p>秉持「大道至简，优雅易用」的开发理念，怀揣「用代码书写一切可能」的行业价值观，致力于向中国数字化团队交付被广泛验证、可信赖的通用软件程式。</p>
+						<!-- <div class="footer-social">
+							<a href="#">
+								<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<circle cx="12" cy="12" r="10"></circle>
+									<path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+									<line x1="9" y1="9" x2="9.01" y2="9"></line>
+									<line x1="15" y1="9" x2="15.01" y2="9"></line>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+									<path d="M2 8a6 6 0 0 1 6 6v7H4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7H2v-7z"></path>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M14 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"></path>
+									<path d="M10 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"></path>
+									<path d="M8 14h8"></path>
+									<path d="M12 8v4"></path>
+								</svg>
+							</a>
+						</div> -->
 					</div>
-				</section>
-				<!--/.SERVICES END-->
-
-				<!--SKILLS-->
-				<section class="white-bg" id="skill">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="title-small">
-									<span>产业透视</span>
-								</h3>
-								<p class="content-detail">
-									我们也许可以做的更多。
-									<br /><br />
-									We can probably do more.
-								</p>
-							</div>
-							<div class="col-md-9 content-right">
-								<!--SKILLST-->
-								<div class="skillst">
-									<div class="skillbar" data-percent="78%">
-										<div class="title head-sm">
-											版权保护
-										</div>
-										<div class="count-bar">
-											<div class="count"></div>
-										</div>
-									</div>
-									<div class="skillbar" data-percent="91%">
-										<div class="title head-sm">
-											流量推广
-										</div>
-										<div class="count-bar">
-											<div class="count"></div>
-										</div>
-									</div>
-									<div class="skillbar" data-percent="58%">
-										<div class="title head-sm">
-											创作素材
-										</div>
-										<div class="count-bar">
-											<div class="count"></div>
-										</div>
-									</div>
-									<div class="skillbar" data-percent="63%">
-										<div class="title head-sm">
-											创作环境
-										</div>
-										<div class="count-bar">
-											<div class="count"></div>
-										</div>
-									</div>
-									<div class="skillbar" data-percent="95%">
-										<div class="title head-sm">
-											收益变现
-										</div>
-										<div class="count-bar">
-											<div class="count"></div>
-										</div>
-									</div>
-								</div>
-								<!--/.SKILLST END-->
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--/.SKILLS END-->
-
-				<!--EDUCATION-->
-				<section class="grey-bg" id="education">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="title-small">
-									<span>成长历程</span>
-								</h3>
-								<p class="content-detail">
-									这里有关于我们成长的故事。
-									<br /><br />
-									Here's a story about how we grew up.
-								</p>
-							</div>
-							<div class="col-md-9 content-right">
-								<div class="row">
-									<ul class="listing-item">
-										<li>
-											<div class="col-md-6 col-sm-6">
-												<div class="wrap-card">
-													<div class="card">
-														<h2 class="year">
-															2002 - 2005
-														</h2>
-														<p class="job">
-															建立
-														</p>
-														<p class="company">
-															唱片商行
-														</p>
-														<hr>
-														<div class="text-detail">
-															<p>
-																是一家坐落于新疆伊犁河谷的附近的唱片商行，主要做磁碟、光盘、CD等音频介质的租赁、售卖。
-															</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
-
-										<li>
-											<div class="col-md-6 col-sm-6">
-												<div class="wrap-card">
-													<div class="card">
-														<h2 class="year">
-															2005 - 2007
-														</h2>
-														<p class="job">
-															发展
-														</p>
-														<p class="company">
-															建立业务部
-														</p>
-														<hr>
-														<div class="text-detail">
-															<p>
-																我们逐步完善产业类型，建立相关业务部，并于环球唱片建立合作。
-															</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
-									<ul class="listing-item">
-										<li>
-											<div class="col-md-6 col-sm-6">
-												<div class="wrap-card">
-													<div class="card">
-														<h2 class="year">
-															2007 - 2012
-														</h2>
-														<p class="job">
-															天天动听业务
-														</p>
-														<p class="company">
-															发展
-														</p>
-														<hr>
-														<div class="text-detail">
-															<p>
-																与天天动听建立业务合作，负责其作品入库和其曲库维护。业务流程逐步完善。
-															</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
-
-										<li>
-											<div class="col-md-6 col-sm-6">
-												<div class="wrap-card">
-													<div class="card">
-														<h2 class="year">
-															2012- 今
-														</h2>
-														<p class="job">
-															期待
-														</p>
-														<p class="company">
-															未来
-														</p>
-														<hr>
-														<div class="text-detail">
-															<p>
-																未来更精彩，期待我们可以做的更好。
-															</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--/.EDUCATION END-->
-
-				<!--TESTIMONIAL-->
-				<section id="testimonial">
-					<div class="container">
-						<div class="row wrap-testimonial">
-							<div class="col-md-10 col-md-offset-1">
-								<div class="owl-carousel">
-									<div class="list-testimonial">
-										<div class="content-testimonial">
-											<h3 class="testi">
-												为了培养坚不可摧的理想，人民需要特殊的艺术，特殊的场所，而主要是能在人民思想感情中引起反响的特殊作品。人民不应当觉得自己只是闯入一个思想陌生的世界的客人，而应当在这种艺术中认识自己，认识自己的力量。
-											</h3>
-											<p class="people">
-												茨威格
-											</p>
-										</div>
-									</div>
-									<div class="list-testimonial">
-										<div class="content-testimonial">
-											<h3 class="testi">
-												学会集体工作的艺术。在今天的科学中，只有集体的努力才会有真正的成就。如果你一个人工作，即使你有非凡的能力，你也不能在科学上做出巨大的发现，而你的同事将始终是你的思想的扩音器和放大器，正如你自己——集体中的一员——也是别人的思想的扩音器和放大器一样。
-											</h3>
-											<p class="people">
-												泽林斯基
-											</p>
-										</div>
-									</div>
-									<div class="list-testimonial">
-										<div class="content-testimonial">
-											<h3 class="testi">
-												认为文学的责任就在于从坏人堆里挖出“珍珠”来，那就等于否定文学本身。文学所以叫做艺术，就是因为它按生活的相来面目描写生活。它的任务是无条件的，直率的真实。把文学的职能缩小成为搜罗“珍珠”之类地专门工作。那是致命打击。
-											</h3>
-											<p class="people">
-												契诃夫
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mask-testimonial"></div>
-				</section>
-				<!--/.TESTMONIAL END-->
-
-				<!--BLOG-->
-				<section class="grey-bg" id="blog">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<h3 class="title-small-center text-center">
-									<span>合作平台</span>
-								</h3>
-								<div class="row">
-									<div class="col-md-6 col-md-offset-3">
-										<p class="content-details text-center">
-											我们与诸多流媒体平台建立了长期稳定的合作关系
-										</p>
-									</div>
-								</div>
-								<!--GRID ANLI-->
-								<div class="grid">
-									<div class="grid-item">
-										<div class="wrap-article">
-											<img alt="anli-1" class="img-circle text-center"
-												src="home/images/pingtai/qq.svg">
-											<p class="subtitle fancy">
-												<span>2017年09月建立合作</span>
-											</p>
-											<a href="https://y.qq.com/">
-												<h3 class="title">
-													QQ音乐
-												</h3>
-											</a>
-											<p class="content-blog">
-												QQ音乐是隶属于腾讯音乐娱乐集团的音乐流媒体平台。自2005年创立至今，QQ音乐注册用户总量已达8亿。以优质内容为核心，以大数据与互联网技术为推动力，QQ音乐致力于打造“智慧声态”的“立体”泛音乐生态圈，为用户提供多元化的音乐生活体验。
-											</p>
-										</div>
-									</div>
-
-									<div class="grid-item">
-										<div class="wrap-article">
-											<img alt="blog-4" class="img-circle text-center"
-												src="home/images/pingtai/kg.svg">
-											<p class="subtitle fancy">
-												<span>2018年03月建立合作</span>
-											</p>
-											<a href="#">
-												<h3 class="title">
-													酷狗音乐
-												</h3>
-											</a>
-											<p class="content-blog">
-												酷狗是中国极具技术创新基因的数字音乐交互服务提供商，致力于为互联网用户和数字音乐产业发展提供完善的解决方案。酷狗一直在数字音乐发展上大胆尝试，先后与唱片公司、版权管理机构合作探索发展，积累音乐版权，并在推动广范围的跨行业、跨平台合作上做出努力。
-											</p>
-										</div>
-									</div>
-
-									<div class="grid-item">
-										<div class="wrap-article">
-											<img alt="blog6" class="img-circle text-center"
-												src="home/images/pingtai/wyy.svg">
-											<p class="subtitle fancy">
-												<span>2018年06月建立合作</span>
-											</p>
-											<a href="#">
-												<h3 class="title">
-													网易云音乐
-												</h3>
-											</a>
-											<p class="content-blog">
-												网易云音乐是一款由网易开发的音乐产品，是网易杭州研究院的成果，依托专业音乐人、DJ、好友推荐及社交功能，在线音乐服务主打歌单、社交、大牌推荐和音乐指纹，以歌单、DJ节目、社交、地理位置为核心要素，主打发现和分享。<br><br>
-											</p>
-										</div>
-									</div>
-
-									<div class="grid-item">
-										<div class="wrap-article">
-											<img alt="blog2" class="img-circle text-center"
-												src="home/images/pingtai/xm.svg">
-											<p class="subtitle fancy">
-												<span>2019年02月建立合作</span>
-											</p>
-											<a href="#">
-												<h3 class="title">
-													虾米音乐
-												</h3>
-											</a>
-											<p class="content-blog">
-												虾米音乐是专业的音乐内容发现及消费平台，依托曲库全、分类细，同时致力于扶持原创音乐，2014年起，启动原创音乐扶持项目——寻光计划。2021年1月5日，虾米音乐发布官方声明表示，由于业务调整，虾米音乐播放器业务将于2021年2月5日正式停止服务；3月5日0点后除网页端音乐人授权服务维持运营，其他运营均停止并关闭服务器，届时及以后将无法登录。
-											</p>
-										</div>
-									</div>
-
-									<div class="grid-item">
-										<div class="wrap-article">
-											<img alt="blog5" class="img-circle text-center"
-												src="home/images/pingtai/kw.svg">
-											<p class="subtitle fancy">
-												<span>2018年07月建立合作</span>
-											</p>
-											<a href="https://www.kuwo.com">
-												<h3 class="title">
-													酷我音乐
-												</h3>
-											</a>
-											<p class="content-blog">
-												酷我音乐是在线数字音乐平台，自2005年成立以来，已经积累了领跑行业的版权曲库和无损音乐库。酷我音乐深挖综艺、影视、剧集等热门内容，通过主播电台、音乐直播、视频等特色内容，以及国际前沿的音频技术和高性价比音乐硬件产品，持续致力为用户提供个性化、多元化的音乐体验
-												。<br><br><br>
-											</p>
-										</div>
-									</div>
-
-									<div class="grid-item">
-										<div class="wrap-article">
-											<img alt="blog-3" class="img-circle text-center"
-												src="home/images/pingtai/mg.svg">
-											<p class="subtitle fancy">
-												<span>2018年10月建立合作</span>
-											</p>
-											<a href="#">
-												<h3 class="title">
-													咪咕音乐
-												</h3>
-											</a>
-											<p class="content-blog">
-												咪咕音乐拥有www、wap、12530语音台三大门户及咪咕音乐App客户端，面向用户提供完整的音乐产品及体验。此外，咪咕音乐还携手华纳、索尼、环球、EMI等国际知名唱片公司及诸多国内音乐制作人/工作室，推出众多正版音乐歌曲、彩铃订制等音乐类订制内容，每年更有超百场“咪咕和Ta的朋友们”、“咪咕音乐现场”等线上、线下联动的演艺活动及“年度音乐盛典咪咕汇”等大型音乐颁奖礼。
-											</p>
-										</div>
-									</div>
-
-									<div class="grid-item">
-										<div class="wrap-article">
-											<img alt="blog2" class="img-circle text-center"
-												src="home/images/pingtai/ytb.svg">
-											<p class="subtitle fancy">
-												<span>2018年12月建立合作</span>
-											</p>
-											<a href="#">
-												<h3 class="title">
-													YouTube Music
-												</h3>
-											</a>
-											<p class="content-blog">
-												YouTube Music是一款新的音乐流媒体服务，该新服务将包括一款重新设计的手机应用以及一款新的电脑端音乐播放器。
-											</p>
-										</div>
-									</div>
-
-									<div class="grid-item">
-										<div class="wrap-article">
-											<img alt="blog5" class="img-circle text-center"
-												src="home/images/pingtai/qmkg.svg">
-											<p class="subtitle fancy">
-												<span>2019年04月建立合作</span>
-											</p>
-											<a href="#">
-												<h3 class="title">
-													全民K歌
-												</h3>
-											</a>
-											<p class="content-blog">
-												《全民K歌》是一款由腾讯公司出品的k歌软件，具有智能打分、专业混音、好友擂台、修音、趣味互动以及社交分享功能。2014年8月26日，《全民K歌》正式开启预约下载，并于2014年9月1日首发。
-											</p>
-										</div>
-									</div>
-
-									<div class="grid-item">
-										<div class="wrap-article">
-											<img alt="blog-3" class="img-circle text-center"
-												src="home/images/pingtai/5sing.svg">
-											<p class="subtitle fancy">
-												<span>2017年12月建立合作</span>
-											</p>
-											<a href="https://5sing.kugou.com">
-												<h3 class="title">
-													5sing
-												</h3>
-											</a>
-											<p class="content-blog">
-												5sing网是中国大陆一个大型网站，主办方为广州酷狗计算机科技有限公司。网站的资源都是音乐发烧友们上传而来，致力于整合数字音乐产业链，以发表、展示、交流原创音乐作品，包装、推广原创音乐人为服务核心。
-											</p>
-										</div>
-									</div>
-
-								</div>
-								<!--/.GRID BLOG END-->
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--/.BLOG END-->
-
-				<!--CONTACT-->
-				<section id="contact" class="white-bg">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="title-small">
-									<span>留言板</span>
-								</h3>
-								<p class="content-detail">
-									您有什么好的交流或建议。
-									<br /><br />
-									Do you have any good communication or suggestions.
-								</p>
-
-							</div>
-							<div class="col-md-9 content-right">
-								<form>
-									<div class="group">
-										<input required="" type="text"><span class="highlight"></span><span
-											class="bar"></span><label>姓名</label>
-									</div>
-									<div class="group">
-										<input required="" type="email"><span class="highlight"></span><span
-											class="bar"></span><label>邮箱</label>
-									</div>
-									<div class="group">
-										<textarea required=""></textarea><span class="highlight"></span><span
-											class="bar"></span><label>留言</label>
-									</div>
-									<input id="sendMessage" name="sendMessage" type="submit" value="提 交">
-								</form>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--/.CONTACT END-->
-
-				<!--FOOTER-->
-				<footer>
-					<div class="footer-top">
-						<ul class="socials">
-							<li class="facebook">
-								<a href="#" data-hover="Q Q">Q Q</a>
-							</li>
-							<li class="twitter">
-								<a href="#" data-hover="微 信">微 信</a>
-							</li>
-							<li class="gplus">
-								<a href="#" data-hover="邮 箱">邮 箱</a>
-							</li>
+					<div class="footer-col">
+						<h3>快速链接</h3>
+						<ul>
+							<li><a href="#home">首页</a></li>
+							<li><a href="#services">业务范围</a></li>
+							<li><a href="#portfolio">成功案例</a></li>
+							<li><a href="#contact">联系我们</a></li>
 						</ul>
 					</div>
-
-					<section id="lxwm" class="white-bg">
-						<div class="footer-bottom">
-							<div class="container">
-								<div class="row">
-									<img src="home/images/wx.png" alt="logo bottom" class="center-block" />&copy;
-									2017-2021.
-									<!-- <a target="_blank" href="https://heheda.top/"> -->
-									江湖文化传媒.
-									<!-- </a> -->
-									版权所有
-								</div>
-							</div>
-						</div>
-					</section>
-
-				</footer>
-				<!--/.FOOTER-END-->
+					<div class="footer-col">
+						<h3>服务项目</h3>
+						<ul>
+							<li><a href="#">Web应用开发</a></li>
+							<li><a href="#">移动应用开发</a></li>
+							<li><a href="#">品牌视觉设计</a></li>
+							<li><a href="#">视频制作</a></li>
+							<li><a href="#">数字营销</a></li>
+							<li><a href="#">服务器远程运维</a></li>
+							<li><a href="#">数字音频出版</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h3>法律信息</h3>
+						<ul>
+							<li><a href="#">隐私政策</a></li>
+							<li><a href="#">服务条款</a></li>
+							<li><a href="#">版权声明</a></li>
+							<li><a href="#">合作伙伴</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2026 江湖文化传媒工作室. All Rights Reserved.</p>
+					<div class="footer-icp">
+						<span>主办：昭苏江湖文化传媒工作室</span>
+						<span>运营：昭苏江湖文化传媒工作室</span>
+						<span>统一社会信用代码：92654026MA78UP5273</span>
+						<a href="https://beian.miit.gov.cn/" target="_blank">
+							新ICP备2026000390号-1
+						</a>
+						<!-- <a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyUzYuNDggMjIgMTIgMjJTMjIgMTcuNTIgMjIgMTJTMjAuNTEgMiAxMiAyWk0xMiAyMEMtNi42MiAwLTEyLTUuMzgtMTItMTJTNS4zOCAwIDEyIDBTMjQgNS4zOCAyNCAxMlMxOC42MiAyMCAxMiAyMFoiIGZpbGw9IiM3MDcwNjAiLz4KPHBhdGggZD0iTTEyIDZDMTAuOTAgNiAxMCA2LjkwIDEwIDhDMTAgOS4xMCAxMC45MCAxMCAxMiAxMEMxMy4xMCAxMCAxNCA5LjEwIDE0IDhDMTQgNi45MCAxMy4xMCA2IDEyIDZaIiBmaWxsPSIjNzA3MDYwIi8+CjxwYXRoIGQ9Ik0xMiAxNEM5LjI0IDE0IDcgMTYuMjQgNyAxOUg5QzkgMTcuMzQgMTAuMzQgMTYgMTIgMTZDMTMuNjYgMTYgMTUgMTcuMzQgMTUgMTlIMTdDMTcgMTYuMjQgMTQuNzYgMTQgMTIgMTRaIiBmaWxsPSIjNzA3MDYwIi8+Cjwvc3ZnPg==" alt="公安备案">
+                        新公网安备 11010502012345号
+                    </a> -->
+					</div>
+				</div>
 			</div>
-			<!--/.CONTENT-WRAP END-->
-		</div>
-		<!--JS模组-->
-		<script src="home/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-		<script src="home/js/jquery.appear.js" type="text/javascript"></script>
-		<script src="home/js/bootstrap.min.js" type="text/javascript"></script>
-		<script src="home/js/classie.js" type="text/javascript"></script>
-		<script src="home/js/owl.carousel.min.js" type="text/javascript"></script>
-		<script src="home/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-		<script src="home/js/masonry.pkgd.min.js" type="text/javascript"></script>
-		<script src="home/js/masonry.js" type="text/javascript"></script>
-		<script src="home/js/smooth-scroll.min.js" type="text/javascript"></script>
-		<script src="home/js/typed.js" type="text/javascript"></script>
-		<script src="home/js/main.js" type="text/javascript"></script>
-		<!--Google广告-->
-		<script async
-			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3670070169085381"
-			crossorigin="anonymous"></script>
+		</footer>
+		<script defer src="./script.js"></script>
 	</body>
 </html>
