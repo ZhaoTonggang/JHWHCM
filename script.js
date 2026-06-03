@@ -198,3 +198,38 @@ function switchText() {
 if (textItems.length > 1) {
 	setInterval(switchText, intervalTime);
 }
+
+// 隐私询问功能
+const privacyModal = document.getElementById('privacyModal');
+const acceptBtn = document.getElementById('acceptBtn');
+const declineBtn = document.getElementById('declineBtn');
+
+// 检查是否已经同意过
+const hasConsented = localStorage.getItem('privacyConsent');
+
+// 如果没有同意过，显示弹窗
+if (!hasConsented) {
+	// 延迟一点显示，让页面先加载
+	setTimeout(() => {
+		privacyModal.classList.add('active');
+	}, 500);
+}
+
+// 接受按钮
+if (acceptBtn) {
+	acceptBtn.addEventListener('click', () => {
+		localStorage.setItem('privacyConsent', 'accepted');
+		localStorage.setItem('consentDate', new Date().toISOString());
+		privacyModal.classList.remove('active');
+	});
+}
+
+// 拒绝按钮
+if (declineBtn) {
+	declineBtn.addEventListener('click', () => {
+		localStorage.setItem('privacyConsent', 'declined');
+		localStorage.setItem('consentDate', new Date().toISOString());
+		privacyModal.classList.remove('active');
+		// 可以在这里添加拒绝后的处理逻辑，比如限制某些功能
+	});
+}
