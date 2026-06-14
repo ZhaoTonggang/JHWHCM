@@ -15,6 +15,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: YouYuan, Yuanti SC, KaiTi, Arial, sans-serif;
+	-webkit-text-decoration: inherit;
+	text-decoration: inherit;
 
 }
 
@@ -800,8 +802,8 @@ nav {
 	letter-spacing: 1px;
 }
 
-.contact-item p {
-	color: #a0a090;
+.contact-item a {
+	color: #fff;
 	line-height: 1.8;
 }
 
@@ -874,6 +876,28 @@ footer {
 	color: #707060;
 }
 
+.footer-bottom p:last-child {
+	margin-top: 0.5rem;
+}
+
+.footer-bottom img {
+	height: 0.8rem;
+	margin-right: 5px;
+}
+
+.footer-bottom .cf {
+	color: #f9ab41;
+}
+
+.footer-bottom .eo {
+	color: #02c3fb;
+}
+
+.contact-item a:hover,
+.footer-bottom a:hover {
+	color: #ff4193;
+}
+
 .footer-icp {
 	margin-bottom: 1.5rem;
 	display: flex;
@@ -892,11 +916,6 @@ footer {
 
 .footer-icp a:hover {
 	color: var(--chinese-gold);
-}
-
-.footer-icp a img {
-	height: 0.8rem;
-	margin-right: 5px;
 }
 
 .footer-social {

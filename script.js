@@ -1,13 +1,14 @@
-const canvas = document.getElementById('particles-canvas');
+const canvas = document.getElementById('particles-canvas'),
+	observerOptions = {
+		threshold: 0.1,
+		rootMargin: '0px 0px -50px 0px'
+	};
 if (canvas) {
 	const ctx = canvas.getContext('2d');
-
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
-
-	const particles = [];
-	const particleCount = 80;
-
+	const particles = [],
+		particleCount = 80;
 	class Particle {
 		constructor() {
 			this.x = Math.random() * canvas.width;
@@ -24,7 +25,6 @@ if (canvas) {
 				this.color = 'rgba(6, 182, 212, 0.6)';
 			}
 		}
-
 		update() {
 			this.x += this.speedX;
 			this.y += this.speedY;
@@ -34,7 +34,6 @@ if (canvas) {
 			if (this.y > canvas.height) this.y = 0;
 			if (this.y < 0) this.y = canvas.height;
 		}
-
 		draw() {
 			ctx.fillStyle = this.color;
 			ctx.beginPath();
@@ -43,58 +42,47 @@ if (canvas) {
 		}
 	}
 
-	function init() {
-		particles.length = 0;
-		for (let i = 0; i < particleCount; i++) {
-			particles.push(new Particle());
-		}
-	}
-
-	function connectParticles() {
-		for (let i = 0; i < particles.length; i++) {
-			for (let j = i + 1; j < particles.length; j++) {
-				const dx = particles[i].x - particles[j].x;
-				const dy = particles[i].y - particles[j].y;
-				const distance = Math.sqrt(dx * dx + dy * dy);
-
-				if (distance < 120) {
-					ctx.strokeStyle = 'rgba(212, 175, 55, ' + 0.15 * (1 - distance / 120) + ')';
-					ctx.lineWidth = 0.5;
-					ctx.beginPath();
-					ctx.moveTo(particles[i].x, particles[i].y);
-					ctx.lineTo(particles[j].x, particles[j].y);
-					ctx.stroke();
+	const init = () => {
+			particles.length = 0;
+			for (let i = 0; i < particleCount; i++) {
+				particles.push(new Particle());
+			}
+		},
+		connectParticles = () => {
+			const len = particles.length;
+			for (let i = 0; i < len; i++) {
+				for (let j = i + 1; j < particles.length; j++) {
+					const dx = particles[i].x - particles[j].x,
+						dy = particles[i].y - particles[j].y,
+						distance = Math.sqrt(dx * dx + dy * dy);
+					if (distance < 120) {
+						ctx.strokeStyle = 'rgba(212, 175, 55, ' + 0.15 * (1 - distance / 120) + ')';
+						ctx.lineWidth = 0.5;
+						ctx.beginPath();
+						ctx.moveTo(particles[i].x, particles[i].y);
+						ctx.lineTo(particles[j].x, particles[j].y);
+						ctx.stroke();
+					}
 				}
 			}
-		}
-	}
-
-	function animate() {
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-		for (let particle of particles) {
-			particle.update();
-			particle.draw();
-		}
-
-		connectParticles();
-		requestAnimationFrame(animate);
-	}
-
+		},
+		animate = () => {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			for (let particle of particles) {
+				particle.update();
+				particle.draw();
+			}
+			connectParticles();
+			requestAnimationFrame(animate);
+		};
 	init();
 	animate();
-
 	window.addEventListener('resize', () => {
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 		init();
 	});
 }
-
-const observerOptions = {
-	threshold: 0.1,
-	rootMargin: '0px 0px -50px 0px'
-};
 
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach(entry => {
@@ -144,8 +132,8 @@ if (counters.length > 0) {
 	});
 }
 
-const menuBtn = document.getElementById('menuBtn');
-const navLinks = document.getElementById('navLinks');
+const menuBtn = document.getElementById('menuBtn'),
+	navLinks = document.getElementById('navLinks');
 
 if (menuBtn && navLinks) {
 	menuBtn.addEventListener('click', () => {
@@ -179,30 +167,24 @@ if (nav) {
 }
 
 // 文字切换功能
-const textItems = document.querySelectorAll('.text-item');
+const textItems = document.querySelectorAll('.text-item'),
+	intervalTime = 4000; // 4秒切换一次;
 let currentIndex = 0;
-const intervalTime = 4000; // 4秒切换一次
 
-function switchText() {
+const switchText = () => {
 	// 移除当前的active类
 	textItems[currentIndex].classList.remove('active');
-
 	// 更新索引
 	currentIndex = (currentIndex + 1) % textItems.length;
-
 	// 添加新的active类
 	textItems[currentIndex].classList.add('active');
 }
-
 // 只有在有多个文字项时才启动切换
-if (textItems.length > 1) {
-	setInterval(switchText, intervalTime);
-}
-
+if (textItems.length > 1) setInterval(switchText, intervalTime);
 // 隐私询问功能
-const privacyModal = document.getElementById('privacyModal');
-const acceptBtn = document.getElementById('acceptBtn');
-const declineBtn = document.getElementById('declineBtn');
+const privacyModal = document.getElementById('privacyModal'),
+	acceptBtn = document.getElementById('acceptBtn'),
+	declineBtn = document.getElementById('declineBtn');
 
 // 检查是否已经同意过
 const hasConsented = localStorage.getItem('privacyConsent');
